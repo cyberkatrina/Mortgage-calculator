@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Mortgage Calculator</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Calculator that calculates monthly payments, sum of all payments, and total interest paid">
+   <meta name="author" content="Katsiaryna Aliashkevich">
+   <script src="calculator.js" type="text/javascript"></script>
+   <link href="calculator.css" rel="stylesheet">
+   <link rel="icon" href="calculator.png">
+</head> 
+
+<body>
+
+   <h2 class="top">Mortgage Calculator</h2>
+
+   <article id= "column1">
+   <form method = "POST">
+
+      <p>
+         Principal amount: <input id = "principal" name = "principal" type = "text" size = "50" >
+      </p>
+   
+      <p>
+         Yearly interest rate: <input id = "yearlyInterest" name = "yearlyInterest" type = "text" size = "50" >
+      </p>
+
+      <p>
+         Loan term in months: <input id = "term" name = "term" type = "text" size = "50" > 
+      </p>
+
+      <p>
+         <input type="button" class = "buttons" onclick="calculate()" value = "Calculate">
+         <input type="reset" onclick="clearResult()" value = "Clear">
+      </p>
+
+      <p id = "monthlyPay"></p>
+
+      <p id = "paySum"></p>
+
+      <p id = "totalInterest"></p>
+
+
+   </form>
+   </article>  
+
+   <article id="column2">
+   <img src="calculator.png" alt="Picture of Mortgage Calculator" style="width:100%">
+   </article>
+
+</body>
+</html>
